@@ -302,7 +302,7 @@
       "settings": {
         "eyebrow": "Dostawa i zwroty",
         "heading": "Mówimy wprost, ile to trwa",
-        "lead": "Paczka jedzie z magazynu naszego dostawcy w Chinach. Nie udajemy, że to 24 godziny.",
+        "lead": "Nie udajemy, że to 24 godziny. Podajemy realne dni i numer do śledzenia paczki.",
         "link": "/pages/dostawa-i-zwroty",
         "link_label": "Pełne zasady dostawy i zwrotów"
       },
@@ -325,7 +325,7 @@
           "type": "step",
           "settings": {
             "days": "6 do 10 dni",
-            "text": "Roboczych. Paczka jedzie do Polski i trafia do ciebie."
+            "text": "Roboczych od wysłania. Paczka trafia pod twój adres."
           }
         },
         "ship_4": {
@@ -377,8 +377,8 @@
         "qa_3": {
           "type": "qa",
           "settings": {
-            "q": "Skąd idzie paczka i ile to trwa?",
-            "a": "<p>Z magazynu naszego dostawcy w Chinach. Wysyłka w 1 do 3 dni roboczych, dostawa 6 do 10 dni roboczych, łącznie zwykle 7 do 13 dni roboczych. Numer do śledzenia dostajesz mailem.</p>"
+            "q": "Ile trwa dostawa?",
+            "a": "<p>Wysyłka w 1 do 3 dni roboczych, dostawa 6 do 10 dni roboczych, łącznie zwykle 7 do 13 dni roboczych. Numer do śledzenia dostajesz mailem.</p>"
           }
         },
         "qa_4": {
@@ -431,7 +431,7 @@
     "ks_footer": {
       "type": "ks-footer",
       "settings": {
-        "company": "<p>KociSparing, [IMIĘ I NAZWISKO SPRZEDAWCY], [ADRES SPRZEDAWCY]<br>Kontakt: kocisparing@gmail.com</p>"
+        "company": "<p>KociSparing, Andrzej Sitnicki, ul. Włodzimierza Perzyńskiego 8A, 01-872 Warszawa<br>Kontakt: kocisparing@gmail.com</p>"
       },
       "blocks": {
         "link_1": {
