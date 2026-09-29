@@ -424,7 +424,7 @@
     "ks_footer": {
       "type": "ks-footer",
       "settings": {
-        "company": "<p>KociSparing, Andrzej Sitnicki, ul. Włodzimierza Perzyńskiego 8A, 01-872 Warszawa<br>Kontakt: kocisparing@gmail.com</p>"
+        "company": "<p>KociSparing, kontakt: kocisparing@gmail.com</p>"
       },
       "blocks": {
         "link_1": {
