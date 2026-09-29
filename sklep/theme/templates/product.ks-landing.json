@@ -21,14 +21,14 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ks-hero.jpg",
-            "alt": "Kocię atakuje pacynkę Sparing Kot na ręce"
+            "alt": "Kocię atakuje pacynkę KociSparing na ręce"
           }
         },
         "img_2": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ks-packshot.jpg",
-            "alt": "Pacynka Sparing Kot z długim rękawem"
+            "alt": "Pacynka KociSparing z długim rękawem"
           }
         },
         "img_3": {
@@ -247,7 +247,7 @@
       "settings": {
         "eyebrow": "Porównanie",
         "heading": "A czym bawisz się z kotem dziś?",
-        "col1": "Sparing Kot",
+        "col1": "KociSparing",
         "col2": "Gołe ręce",
         "col3": "Gruba rękawica",
         "col4": "Wędka z piórkiem"

@@ -59,6 +59,18 @@
             </div>
             <button type="submit" class="ks-btn" {% unless v.available %}disabled{% endunless %}>{{ section.settings.button }}</button>
           </form>
+          {%- if section.settings.show_eta -%}
+            <p class="ks-eta" data-ks-eta data-min="{{ section.settings.eta_min }}" data-max="{{ section.settings.eta_max }}">
+              {{ section.settings.eta_fallback }}
+            </p>
+          {%- endif -%}
+          {%- if section.settings.show_payments and shop.enabled_payment_types.size > 0 -%}
+            <div class="ks-pay" aria-label="Metody płatności">
+              {%- for type in shop.enabled_payment_types -%}
+                {{ type | payment_type_svg_tag: class: 'ks-pay__icon' }}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
         {%- endif -%}
         <div class="ks-trust">
           {%- assign trust = section.settings.trust | split: '|' -%}
@@ -90,6 +102,21 @@
     }
     if (gal) gal.addEventListener('scroll', mark, { passive: true });
     mark();
+    var eta = root.querySelector('[data-ks-eta]');
+    if (eta) {
+      var addWorkdays = function (d, n) {
+        var r = new Date(d.getTime());
+        while (n > 0) { r.setDate(r.getDate() + 1); if (r.getDay() !== 0 && r.getDay() !== 6) n--; }
+        return r;
+      };
+      var now = new Date();
+      var a = addWorkdays(now, +eta.dataset.min || 7);
+      var b = addWorkdays(now, +eta.dataset.max || 13);
+      var dayOnly = { day: 'numeric' };
+      var full = { day: 'numeric', month: 'long' };
+      var from = a.getMonth() === b.getMonth() ? a.toLocaleDateString('pl-PL', dayOnly) : a.toLocaleDateString('pl-PL', full);
+      eta.textContent = 'Zamów dziś, paczka będzie u ciebie między ' + from + ' a ' + b.toLocaleDateString('pl-PL', full) + '.';
+    }
     document.addEventListener('click', function (e) {
       if (!root.contains(e.target)) return;
       var dot = e.target.closest('[data-ks-dot]');
@@ -128,7 +155,12 @@
     { "type": "text", "id": "two_sub", "label": "Zestaw 2: opis", "default": "Dla dwóch kotów albo na prezent" },
     { "type": "number", "id": "second_discount", "label": "Rabat na drugą sztukę (zł)", "default": 50 },
     { "type": "text", "id": "button", "label": "Przycisk", "default": "Dodaj do koszyka" },
-    { "type": "text", "id": "trust", "label": "Zaufanie (oddziel |)", "default": "Darmowa dostawa|30 dni na zwrot|Numer do śledzenia paczki" }
+    { "type": "text", "id": "trust", "label": "Zaufanie (oddziel |)", "default": "Darmowa dostawa|14 dni na zwrot|Numer do śledzenia paczki" },
+    { "type": "checkbox", "id": "show_eta", "label": "Pokaż przewidywaną datę dostawy", "default": true },
+    { "type": "number", "id": "eta_min", "label": "Dostawa od (dni robocze)", "default": 7 },
+    { "type": "number", "id": "eta_max", "label": "Dostawa do (dni robocze)", "default": 13 },
+    { "type": "text", "id": "eta_fallback", "label": "Tekst zastępczy dostawy", "default": "Dostawa w 7 do 13 dni roboczych od zamówienia." },
+    { "type": "checkbox", "id": "show_payments", "label": "Pokaż ikony płatności", "default": true }
   ],
   "blocks": [
     {
@@ -136,7 +168,7 @@
       "name": "Zdjęcie",
       "settings": [
         { "type": "image_picker", "id": "image", "label": "Zdjęcie" },
-        { "type": "text", "id": "alt", "label": "Opis zdjęcia", "default": "Pacynka Sparing Kot" }
+        { "type": "text", "id": "alt", "label": "Opis zdjęcia", "default": "Pacynka KociSparing" }
       ]
     }
   ],
