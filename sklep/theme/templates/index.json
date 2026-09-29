@@ -290,13 +290,6 @@
         "row_4"
       ]
     },
-    "ks_reviews": {
-      "type": "ks-reviews",
-      "settings": {
-        "eyebrow": "Opinie",
-        "heading": "Co mówią opiekunowie kotów"
-      }
-    },
     "ks_shipping": {
       "type": "ks-shipping",
       "settings": {
@@ -488,7 +481,6 @@
     "ks_foryou",
     "ks_kit",
     "ks_compare",
-    "ks_reviews",
     "ks_shipping",
     "ks_guarantee",
     "ks_faq",
