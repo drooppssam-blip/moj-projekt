@@ -1,0 +1,36 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+<div class="ks ks-sec ks-sec--alt">
+  <div class="ks-wrap">
+    <div class="ks-center">
+      <span class="ks-eyebrow">{{ section.settings.eyebrow }}</span>
+      <h2>{{ section.settings.heading }}</h2>
+      <p class="ks-lead">{{ section.settings.lead }}</p>
+    </div>
+    <ol class="ks-timeline">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}><span class="ks-timeline__days">{{ block.settings.days }}</span>{{ block.settings.text }}</li>
+      {%- endfor -%}
+    </ol>
+    <p class="ks-center" style="margin-top:20px"><a href="{{ section.settings.link }}">{{ section.settings.link_label }}</a></p>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "KS Dostawa i zwroty",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Nad nagłówkiem", "default": "Dostawa i zwroty" },
+    { "type": "text", "id": "heading", "label": "Nagłówek", "default": "Mówimy wprost, ile to trwa" },
+    { "type": "textarea", "id": "lead", "label": "Wstęp", "default": "Paczka jedzie z magazynu dostawcy w Chinach." },
+    { "type": "url", "id": "link", "label": "Link do strony" },
+    { "type": "text", "id": "link_label", "label": "Tekst linku", "default": "Pełne zasady dostawy i zwrotów" }
+  ],
+  "blocks": [
+    { "type": "step", "name": "Etap", "settings": [
+      { "type": "text", "id": "days", "label": "Dni", "default": "1 do 3 dni" },
+      { "type": "textarea", "id": "text", "label": "Opis", "default": "Opis etapu" }
+    ] }
+  ],
+  "presets": [{ "name": "KS Dostawa i zwroty" }]
+}
+{% endschema %}

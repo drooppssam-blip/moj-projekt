@@ -1,0 +1,28 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+<div class="ks ks-foot">
+  <div class="ks-wrap">
+    <ul class="ks-foot__links">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}><a href="{{ block.settings.link }}">{{ block.settings.label }}</a></li>
+      {%- endfor -%}
+    </ul>
+    <div>{{ section.settings.company }}</div>
+    <p style="margin-top:12px">© {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "KS Stopka",
+  "tag": "section",
+  "settings": [
+    { "type": "richtext", "id": "company", "label": "Dane sprzedawcy", "default": "<p>Dane sprzedawcy</p>" }
+  ],
+  "blocks": [
+    { "type": "link", "name": "Link", "settings": [
+      { "type": "text", "id": "label", "label": "Tekst", "default": "Regulamin" },
+      { "type": "url", "id": "link", "label": "Link" }
+    ] }
+  ],
+  "presets": [{ "name": "KS Stopka" }]
+}
+{% endschema %}

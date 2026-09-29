@@ -1,0 +1,45 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+{%- if section.blocks.size > 0 or request.design_mode -%}
+<div class="ks ks-sec" id="ks-{{ section.id }}">
+  <div class="ks-wrap">
+    <div class="ks-center">
+      <span class="ks-eyebrow">{{ section.settings.eyebrow }}</span>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <div class="ks-reviews">
+        {%- for block in section.blocks -%}
+          <div class="ks-review" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 700 | image_tag: alt: block.settings.name, loading: 'lazy', sizes: '(min-width: 900px) 340px, 80vw' }}
+            {%- endif -%}
+            <div class="ks-review__stars">★★★★★</div>
+            <blockquote>{{ block.settings.text }}</blockquote>
+            <div class="ks-review__name">{{ block.settings.name }}</div>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="ks-empty">Tu pojawią się prawdziwe opinie klientów. Dodaj je jako bloki „Opinia” po pierwszych zamówieniach. Ta ramka jest widoczna tylko w edytorze.</div>
+    {%- endif -%}
+  </div>
+</div>
+{%- endif -%}
+{% schema %}
+{
+  "name": "KS Opinie",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Nad nagłówkiem", "default": "Opinie" },
+    { "type": "text", "id": "heading", "label": "Nagłówek", "default": "Co mówią opiekunowie kotów" }
+  ],
+  "blocks": [
+    { "type": "review", "name": "Opinia", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Zdjęcie klienta" },
+      { "type": "textarea", "id": "text", "label": "Treść", "default": "Treść opinii" },
+      { "type": "text", "id": "name", "label": "Podpis", "default": "Imię, miasto" }
+    ] }
+  ],
+  "presets": [{ "name": "KS Opinie" }]
+}
+{% endschema %}

@@ -1,0 +1,37 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+<div class="ks ks-sec">
+  <div class="ks-wrap">
+    <div class="ks-center">
+      <span class="ks-eyebrow">{{ section.settings.eyebrow }}</span>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="ks-kit">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1400 | image_tag: alt: section.settings.heading, loading: 'lazy', sizes: '(min-width: 900px) 1080px, 92vw' }}
+      {%- endif -%}
+      <ul class="ks-kit__list">
+        {%- for block in section.blocks -%}
+          <li {{ block.shopify_attributes }}><span class="ks-kit__num">{{ block.settings.num }}</span><span class="ks-kit__label">{{ block.settings.label }}</span></li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "KS Zestaw",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Nad nagłówkiem", "default": "Co dostajesz" },
+    { "type": "text", "id": "heading", "label": "Nagłówek", "default": "W paczce" },
+    { "type": "image_picker", "id": "image", "label": "Zdjęcie zestawu" }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Pozycja", "settings": [
+      { "type": "text", "id": "num", "label": "Liczba", "default": "1" },
+      { "type": "text", "id": "label", "label": "Opis", "default": "pacynka" }
+    ] }
+  ],
+  "presets": [{ "name": "KS Zestaw" }]
+}
+{% endschema %}

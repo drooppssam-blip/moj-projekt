@@ -1,0 +1,29 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+<div class="ks ks-sec">
+  <div class="ks-wrap ks-split">
+    <div>
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1000 | image_tag: alt: section.settings.alt, loading: 'lazy', sizes: '(min-width: 900px) 540px, 92vw' }}
+      {%- endif -%}
+    </div>
+    <div>
+      <span class="ks-eyebrow">{{ section.settings.eyebrow }}</span>
+      <p class="ks-quote">{{ section.settings.quote }}</p>
+      <div>{{ section.settings.text }}</div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "KS Problem",
+  "tag": "section",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Zdjęcie" },
+    { "type": "text", "id": "alt", "label": "Opis zdjęcia", "default": "Kocię gryzie rękę" },
+    { "type": "text", "id": "eyebrow", "label": "Nad nagłówkiem", "default": "Znasz to?" },
+    { "type": "textarea", "id": "quote", "label": "Zdanie do persony", "default": "Masz na rękach więcej zadrapań niż twój kot ma miesięcy." },
+    { "type": "richtext", "id": "text", "label": "Tekst", "default": "<p>Kocię nie jest złośliwe. W miocie ćwiczyłoby polowanie na rodzeństwie. W mieszkaniu jedynym ruszającym się celem jesteś ty.</p>" }
+  ],
+  "presets": [{ "name": "KS Problem" }]
+}
+{% endschema %}

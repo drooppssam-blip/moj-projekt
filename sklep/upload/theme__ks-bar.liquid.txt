@@ -1,0 +1,24 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+<div class="ks ks-bar">
+  <div class="ks-wrap">
+    <ul class="ks-bar__list">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}><strong>{{ block.settings.strong }}</strong> {{ block.settings.text }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "KS Pasek dostawy",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    { "type": "item", "name": "Punkt", "settings": [
+      { "type": "text", "id": "strong", "label": "Wyróżnienie", "default": "1 do 3 dni" },
+      { "type": "text", "id": "text", "label": "Tekst", "default": "na wysyłkę" }
+    ] }
+  ],
+  "presets": [{ "name": "KS Pasek dostawy" }]
+}
+{% endschema %}

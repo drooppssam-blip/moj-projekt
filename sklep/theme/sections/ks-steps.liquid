@@ -1,0 +1,41 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+<div class="ks ks-sec ks-sec--alt">
+  <div class="ks-wrap">
+    <div class="ks-center">
+      <span class="ks-eyebrow">{{ section.settings.eyebrow }}</span>
+      <h2>{{ section.settings.heading }}</h2>
+      <p class="ks-lead">{{ section.settings.lead }}</p>
+    </div>
+    <div class="ks-steps">
+      {%- for block in section.blocks -%}
+        <div class="ks-step" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 800 | image_tag: alt: block.settings.title, loading: 'lazy', sizes: '(min-width: 900px) 360px, 92vw' }}
+          {%- endif -%}
+          <span class="ks-step__num">{{ forloop.index }}</span>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "KS Jak to działa",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Nad nagłówkiem", "default": "Jak to działa" },
+    { "type": "text", "id": "heading", "label": "Nagłówek", "default": "Kot dostaje rodzeństwo do zapasów" },
+    { "type": "textarea", "id": "lead", "label": "Wstęp", "default": "Trzy kroki, bez nauki i bez baterii." }
+  ],
+  "blocks": [
+    { "type": "step", "name": "Krok", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Zdjęcie" },
+      { "type": "text", "id": "title", "label": "Tytuł", "default": "Krok" },
+      { "type": "textarea", "id": "text", "label": "Tekst", "default": "Opis kroku" }
+    ] }
+  ],
+  "presets": [{ "name": "KS Jak to działa" }]
+}
+{% endschema %}

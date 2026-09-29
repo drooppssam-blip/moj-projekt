@@ -1,0 +1,145 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign p = section.settings.product
+  if p == blank
+    assign p = product
+  endif
+  assign v = p.selected_or_first_available_variant
+  assign disc = section.settings.second_discount | times: 100
+  assign two_total = v.price | times: 2 | minus: disc
+  assign two_regular = v.price | times: 2
+-%}
+<div class="ks ks-hero" id="ks-{{ section.id }}" data-ks-hero>
+  <div class="ks-wrap">
+    <div class="ks-brand">
+      {%- if section.settings.logo != blank -%}
+        {{ section.settings.logo | image_url: width: 400 | image_tag: alt: shop.name, loading: 'eager' }}
+      {%- else -%}
+        <strong>{{ shop.name }}</strong>
+      {%- endif -%}
+    </div>
+    <div class="ks-hero__grid">
+      <div>
+        <div class="ks-gallery" data-ks-gallery>
+          {%- for block in section.blocks -%}
+            {%- if block.settings.image != blank -%}
+              <div class="ks-gallery__item" {{ block.shopify_attributes }}>
+                {{ block.settings.image | image_url: width: 1200 | image_tag: alt: block.settings.alt, loading: 'eager', sizes: '(min-width: 900px) 560px, 88vw' }}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        <div class="ks-dots" data-ks-dots></div>
+      </div>
+      <div>
+        <span class="ks-eyebrow">{{ section.settings.eyebrow }}</span>
+        <h1>{{ section.settings.heading }}</h1>
+        <p class="ks-lead">{{ section.settings.subheading }}</p>
+        <ul class="ks-points">
+          {%- assign lines = section.settings.points | newline_to_br | split: '<br />' -%}
+          {%- for line in lines -%}
+            {%- assign t = line | strip -%}
+            {%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}
+          {%- endfor -%}
+        </ul>
+        {%- if p != blank -%}
+          <form method="post" action="{{ routes.cart_add_url }}" data-ks-buy>
+            <input type="hidden" name="id" value="{{ v.id }}">
+            <input type="hidden" name="quantity" value="1" data-ks-qty>
+            <input type="hidden" name="return_to" value="{{ routes.cart_url }}">
+            <div class="ks-bundles" role="group" aria-label="Wybierz zestaw">
+              <button type="button" class="ks-bundle" aria-pressed="true" data-ks-bundle="1">
+                <span><span class="ks-bundle__title">{{ section.settings.one_label }}</span><span class="ks-bundle__sub">{{ section.settings.one_sub }}</span></span>
+                <span class="ks-bundle__price">{{ v.price | money }}</span>
+              </button>
+              <button type="button" class="ks-bundle" aria-pressed="false" data-ks-bundle="2">
+                <span><span class="ks-bundle__title">{{ section.settings.two_label }}</span><span class="ks-bundle__sub">{{ section.settings.two_sub }}</span></span>
+                <span class="ks-bundle__price">{{ two_total | money }} <s style="font-weight:400;color:#8a7f77">{{ two_regular | money }}</s></span>
+              </button>
+            </div>
+            <button type="submit" class="ks-btn" {% unless v.available %}disabled{% endunless %}>{{ section.settings.button }}</button>
+          </form>
+        {%- endif -%}
+        <div class="ks-trust">
+          {%- assign trust = section.settings.trust | split: '|' -%}
+          {%- for t in trust -%}<span>✓ {{ t | strip }}</span>{%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function () {
+    var root = document.getElementById('ks-{{ section.id }}');
+    if (!root || root.dataset.ksInit) return;
+    root.dataset.ksInit = '1';
+    var gal = root.querySelector('[data-ks-gallery]');
+    var dots = root.querySelector('[data-ks-dots]');
+    var items = gal ? gal.children : [];
+    for (var i = 0; i < items.length && items.length > 1; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Zdjęcie ' + (i + 1));
+      b.dataset.ksDot = i;
+      dots.appendChild(b);
+    }
+    function mark() {
+      if (!gal || !dots.children.length) return;
+      var idx = Math.round(gal.scrollLeft / (items[0].offsetWidth + 10));
+      for (var j = 0; j < dots.children.length; j++) dots.children[j].setAttribute('aria-current', j === idx ? 'true' : 'false');
+    }
+    if (gal) gal.addEventListener('scroll', mark, { passive: true });
+    mark();
+    document.addEventListener('click', function (e) {
+      if (!root.contains(e.target)) return;
+      var dot = e.target.closest('[data-ks-dot]');
+      if (dot) {
+        var it = items[+dot.dataset.ksDot];
+        gal.scrollTo({ left: it.offsetLeft - gal.offsetLeft, behavior: 'smooth' });
+        return;
+      }
+      var bundle = e.target.closest('[data-ks-bundle]');
+      if (bundle) {
+        root.querySelectorAll('[data-ks-bundle]').forEach(function (x) { x.setAttribute('aria-pressed', x === bundle ? 'true' : 'false'); });
+        root.querySelector('[data-ks-qty]').value = bundle.dataset.ksBundle;
+      }
+    });
+    document.addEventListener('submit', function (e) {
+      if (!root.contains(e.target)) return;
+      var btn = e.target.querySelector('[type="submit"]');
+      if (btn) btn.setAttribute('disabled', 'disabled');
+    });
+  })();
+</script>
+{% schema %}
+{
+  "name": "KS Hero",
+  "tag": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "Produkt" },
+    { "type": "image_picker", "id": "logo", "label": "Logo" },
+    { "type": "text", "id": "eyebrow", "label": "Nad nagłówkiem", "default": "Dla opiekunów kociąt" },
+    { "type": "textarea", "id": "heading", "label": "Nagłówek", "default": "Twój kot nie jest agresywny. Po prostu jesteś jedyną rzeczą w domu, która się rusza." },
+    { "type": "textarea", "id": "subheading", "label": "Podtytuł", "default": "Sparing Kot daje mu przeciwnika do zapasów, którego wolno gryźć i kopać." },
+    { "type": "textarea", "id": "points", "label": "Punkty (każdy w nowej linii)", "default": "Długa osłona zakrywa przedramię\nKot wyładowuje energię na pacynce\nWysyłka z numerem do śledzenia" },
+    { "type": "text", "id": "one_label", "label": "Zestaw 1: nazwa", "default": "1 pacynka" },
+    { "type": "text", "id": "one_sub", "label": "Zestaw 1: opis", "default": "Dla jednego kota" },
+    { "type": "text", "id": "two_label", "label": "Zestaw 2: nazwa", "default": "2 pacynki" },
+    { "type": "text", "id": "two_sub", "label": "Zestaw 2: opis", "default": "Dla dwóch kotów albo na prezent" },
+    { "type": "number", "id": "second_discount", "label": "Rabat na drugą sztukę (zł)", "default": 50 },
+    { "type": "text", "id": "button", "label": "Przycisk", "default": "Dodaj do koszyka" },
+    { "type": "text", "id": "trust", "label": "Zaufanie (oddziel |)", "default": "Darmowa dostawa|30 dni na zwrot|Numer do śledzenia paczki" }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Zdjęcie",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Zdjęcie" },
+        { "type": "text", "id": "alt", "label": "Opis zdjęcia", "default": "Pacynka Sparing Kot" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "KS Hero" }]
+}
+{% endschema %}

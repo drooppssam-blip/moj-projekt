@@ -1,0 +1,25 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+<div class="ks ks-sec">
+  <div class="ks-wrap ks-split">
+    <div><div class="ks-badge"><span class="ks-badge__big">{{ section.settings.days }}</span><span>{{ section.settings.days_label }}</span></div></div>
+    <div>
+      <span class="ks-eyebrow">{{ section.settings.eyebrow }}</span>
+      <h2>{{ section.settings.heading }}</h2>
+      <div>{{ section.settings.text }}</div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "KS Gwarancja",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "days", "label": "Liczba dni", "default": "30" },
+    { "type": "text", "id": "days_label", "label": "Podpis", "default": "dni gwarancji" },
+    { "type": "text", "id": "eyebrow", "label": "Nad nagłówkiem", "default": "Gwarancja zabawy" },
+    { "type": "text", "id": "heading", "label": "Nagłówek", "default": "Kot się nie bawi? Oddajemy pieniądze" },
+    { "type": "richtext", "id": "text", "label": "Tekst", "default": "<p>Opis gwarancji</p>" }
+  ],
+  "presets": [{ "name": "KS Gwarancja" }]
+}
+{% endschema %}

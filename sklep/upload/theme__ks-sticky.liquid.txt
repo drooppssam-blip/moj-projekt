@@ -1,0 +1,53 @@
+{{ 'ks-landing.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign p = section.settings.product
+  if p == blank
+    assign p = product
+  endif
+  assign v = p.selected_or_first_available_variant
+-%}
+{%- if p != blank -%}
+<div class="ks ks-sticky" id="ks-{{ section.id }}" aria-hidden="true">
+  <div class="ks-sticky__price">{{ v.price | money }}<small>{{ section.settings.note }}</small></div>
+  <form method="post" action="{{ routes.cart_add_url }}" style="flex:1">
+    <input type="hidden" name="id" value="{{ v.id }}">
+    <input type="hidden" name="quantity" value="1">
+    <input type="hidden" name="return_to" value="{{ routes.cart_url }}">
+    <button type="submit" class="ks-btn" tabindex="-1">{{ section.settings.button }}</button>
+  </form>
+</div>
+<script>
+  (function () {
+    var bar = document.getElementById('ks-{{ section.id }}');
+    if (!bar || bar.dataset.ksInit) return;
+    bar.dataset.ksInit = '1';
+    function setVisible(show) {
+      bar.classList.toggle('is-visible', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      var b = bar.querySelector('button');
+      if (b) b.tabIndex = show ? 0 : -1;
+    }
+    function watch() {
+      var target = document.querySelector('[data-ks-buy]');
+      if (!target || !('IntersectionObserver' in window)) { setVisible(true); return; }
+      new IntersectionObserver(function (entries) {
+        var e = entries[0];
+        setVisible(!e.isIntersecting && e.boundingClientRect.top < 0);
+      }).observe(target);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', watch); else watch();
+  })();
+</script>
+{%- endif -%}
+{% schema %}
+{
+  "name": "KS Pasek na telefonie",
+  "tag": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "Produkt" },
+    { "type": "text", "id": "note", "label": "Dopisek pod ceną", "default": "Darmowa dostawa" },
+    { "type": "text", "id": "button", "label": "Przycisk", "default": "Do koszyka" }
+  ],
+  "presets": [{ "name": "KS Pasek na telefonie" }]
+}
+{% endschema %}
