@@ -15,7 +15,7 @@
         "two_sub": "Druga 50 zł taniej. Dla dwóch kotów albo na prezent",
         "second_discount": 50,
         "button": "Dodaj do koszyka",
-        "trust": "Darmowa dostawa|30 dni na zwrot|Numer do śledzenia paczki"
+        "trust": "Darmowa dostawa|14 dni na zwrot|Numer do śledzenia paczki"
       },
       "blocks": {
         "img_1": {
@@ -90,7 +90,7 @@
         "bar_4": {
           "type": "item",
           "settings": {
-            "strong": "30 dni",
+            "strong": "14 dni",
             "text": "na zwrot, polski adres"
           }
         }
@@ -331,7 +331,7 @@
         "ship_4": {
           "type": "step",
           "settings": {
-            "days": "30 dni",
+            "days": "14 dni",
             "text": "Na zwrot od dnia otrzymania, na polski adres."
           }
         }
@@ -346,11 +346,11 @@
     "ks_guarantee": {
       "type": "ks-guarantee",
       "settings": {
-        "days": "30",
+        "days": "14",
         "days_label": "dni gwarancji",
         "eyebrow": "Gwarancja zabawy",
         "heading": "Kot się nie bawi? Oddajemy pieniądze",
-        "text": "<p>Jeśli w ciągu 30 dni od otrzymania paczki twój kot nie zechce się bawić pacynką, napisz do nas. Odeślij ją na polski adres, a oddamy 100% ceny produktu, także gdy była używana.</p><p>Koszt odesłania pokrywa kupujący. Jeśli produkt przyszedł uszkodzony, pokrywamy go my.</p>"
+        "text": "<p>Jeśli w ciągu 14 dni od otrzymania paczki twój kot nie zechce się bawić pacynką, napisz do nas. Odeślij ją na polski adres, a oddamy 100% ceny produktu, także gdy była używana.</p><p>Koszt odesłania pokrywa kupujący. Jeśli produkt przyszedł uszkodzony, pokrywamy go my.</p>"
       }
     },
     "ks_faq": {
@@ -364,7 +364,7 @@
           "type": "qa",
           "settings": {
             "q": "Co jeśli mój kot się wystraszy?",
-            "a": "<p>Niektóre koty na początku podchodzą ostrożnie do nowej zabawki z twarzą. Połóż pacynkę na podłodze i pozwól kotu ją obwąchać. Potem poruszaj nią powoli z daleka, bez podsuwania pod nos. Kilka krótkich sesji działa lepiej niż jedna długa. Jeśli po 30 dniach kot dalej nie chce się bawić, obowiązuje gwarancja zabawy.</p>"
+            "a": "<p>Niektóre koty na początku podchodzą ostrożnie do nowej zabawki z twarzą. Połóż pacynkę na podłodze i pozwól kotu ją obwąchać. Potem poruszaj nią powoli z daleka, bez podsuwania pod nos. Kilka krótkich sesji działa lepiej niż jedna długa. Jeśli po 14 dniach kot dalej nie chce się bawić, obowiązuje gwarancja zabawy.</p>"
           }
         },
         "qa_2": {
