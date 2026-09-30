@@ -211,3 +211,41 @@ W Shopify (Analizy) i w TikTok Studio sprawdź:
 3. **Ile z nich kupiło.**
 
 Kolejne 30 filmów robisz już tylko w najlepszym formacie.
+
+---
+
+## Format P: psychologiczny (hook, emocja, produkt)
+
+Budowa każdego filmu, 12 do 14 sekund:
+1. **0 do 2 s: HOOK.** Jeden mocny obraz i jedno krótkie zdanie. Widz ma się zatrzymać, zanim zdąży przewinąć.
+2. **2 do 8 s: EMOCJA.** Pokazujemy, co czuje ona, a nie co robi produkt: zmęczenie, wstyd, bezradność, poczucie winy.
+3. **8 do 14 s: PRODUKT.** Pacynka pojawia się dopiero tu, jako ulga. Na końcu: „KociSparing · link w bio”.
+
+Zasada uczciwości: emocje są prawdziwe dla opiekunów kociąt, ale nie straszymy i nie obiecujemy efektów, których produkt nie daje (np. „kot przestanie gryźć na zawsze”, zdjęcia „przed i po” rąk).
+
+Produkcja w Higgsfield: scena 1 i 2 jako obrazy z lekkim ruchem kamery, scena 3 jako wideo z pacynką. Do tego polski lektor i tekst na ekranie.
+
+**P1. „To nie był wypadek”**
+* 0 do 2 s: zbliżenie na dłoń z czerwonymi zadrapaniami. Tekst: „To nie był wypadek.” Lektor: „To nie był wypadek.”
+* 2 do 8 s: dziewczyna siedzi na podłodze, kociak wgryza się w jej dłoń, ona cofa rękę i patrzy smutno. Tekst: „Myślałam, że mój kot mnie nie lubi.” Lektor: „Myślałam, że mój kot mnie nie lubi. Każda zabawa kończyła się tak samo.”
+* 8 do 14 s: pacynka na ręce, kot się z nią mocuje, dziewczyna się śmieje. Tekst: „On po prostu nie miał z kim się bić.” Lektor: „A on po prostu nie miał z kim się bić.”
+
+**P2. „4:30. Znowu.”**
+* 0 do 2 s: ciemna sypialnia, zegar 4:30, świecące oczy kota. Tekst: „4:30. Znowu.”
+* 2 do 8 s: zmęczona dziewczyna, kot atakuje jej stopy pod kołdrą. Tekst: „Trzeci tydzień bez normalnego snu.” Lektor: „Trzeci tydzień budzę się o tej samej godzinie.”
+* 8 do 14 s: wieczorem zapasy z pacynką, potem kot śpi zwinięty na łóżku. Tekst: „Zmęczony kot śpi. Ty też.” Lektor: „Teraz wieczorem kot ma z kim się wyszaleć.”
+
+**P3. „Nie dotykaj go”**
+* 0 do 2 s: koleżanka gwałtownie cofa rękę od kota. Tekst: „Nie dotykaj go!”
+* 2 do 8 s: zawstydzona właścicielka przeprasza. Tekst: „Każda wizyta kończyła się przeprosinami.” Lektor: „Każda wizyta u mnie kończyła się przeprosinami.”
+* 8 do 14 s: właścicielka zakłada pacynkę, kot rzuca się na pacynkę, koleżanka się śmieje. Tekst: „Teraz ma swojego przeciwnika.” Lektor: „Teraz ma swojego przeciwnika. A goście mają całe ręce.”
+
+**P4. „Czy mój kot jest agresywny?”**
+* 0 do 2 s: ekran telefonu, w wyszukiwarce wpisane: „czy mój kot jest agresywny”. Tekst: „Wpisałam to o 2 w nocy.”
+* 2 do 8 s: dziewczyna czyta w łóżku, obok śpi kociak. Tekst: „W miocie ćwiczyłby polowanie na rodzeństwie.” Lektor: „Okazało się, że on nie jest agresywny. W miocie ćwiczyłby na rodzeństwie. U mnie ćwiczył na mnie.”
+* 8 do 14 s: pacynka na ręce, zapasy. Tekst: „Dałam mu rodzeństwo do zapasów.” Lektor: „Więc dałam mu przeciwnika.”
+
+**P5. „Moja córka boi się kota”**
+* 0 do 2 s: dziecko szybko chowa nogi pod koc. Tekst: „Moja córka boi się kota.”
+* 2 do 8 s: kot czai się przy kanapie, mama patrzy z troską. Tekst: „Poluje na wszystko, co się rusza.” Lektor: „Kot polował na każdy ruch pod kocem.”
+* 8 do 14 s: mama bawi się z kotem pacynką z dala od dziecka, dziecko patrzy i się uśmiecha. Tekst: „Teraz poluje na coś innego.” Lektor: „Teraz ma swój cel. Zabawa zawsze przy dorosłym.”
