@@ -19,3 +19,13 @@ Okazało się, że mój kot nie jest agresywny. Po prostu nie miał z kim się b
 P5. Moja córka boi się kota
 Kot polował na każdy ruch pod kocem. Teraz ma swój cel do zapasów. Zabawa zawsze przy dorosłym 🐾 Link w bio
 #kot #kociak #kotidziecko #mama #koty #catsoftiktok
+
+# Teksty do lektora TikToka (wersje „bez_tekstu”)
+
+Czasy: zdanie 1 od 0 do 2,5 s, zdanie 2 od 2,5 do 7,5 s, zdanie 3 od 7,5 do 11,7 s, zdanie 4 od 11,7 do 13,5 s.
+
+P1: To nie był wypadek. / Myślałam, że mój kot mnie nie lubi. / On po prostu nie miał z kim się bić. / KociSparing, kocisparing.pl
+P2: 4:30. Znowu. / Trzeci tydzień bez normalnego snu. / Zmęczony kot śpi. Ty też. / KociSparing, kocisparing.pl
+P3: Nie dotykaj go! / Każda wizyta kończyła się przeprosinami. / Teraz ma swojego przeciwnika. / KociSparing, kocisparing.pl
+P4: Wpisałam to o 2 w nocy. / W miocie ćwiczyłby polowanie na rodzeństwie. / Dałam mu rodzeństwo do zapasów. / KociSparing, kocisparing.pl
+P5: Moja córka boi się kota. / Poluje na wszystko, co się rusza. / Teraz poluje na coś innego. / KociSparing, kocisparing.pl
