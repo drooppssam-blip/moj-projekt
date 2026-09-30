@@ -19,7 +19,9 @@
       {%- endif -%}
     </div>
     <div class="ks-hero__grid">
-      <div>
+      <div class="ks-gallery-wrap">
+        <button type="button" class="ks-arrow ks-arrow--prev" data-ks-prev aria-label="Poprzednie zdjęcie" hidden>&#8249;</button>
+        <button type="button" class="ks-arrow ks-arrow--next" data-ks-next aria-label="Następne zdjęcie">&#8250;</button>
         <div class="ks-gallery" data-ks-gallery>
           {%- for block in section.blocks -%}
             {%- if block.settings.image != blank -%}
@@ -95,10 +97,22 @@
       b.dataset.ksDot = i;
       dots.appendChild(b);
     }
+    var prev = root.querySelector('[data-ks-prev]');
+    var next = root.querySelector('[data-ks-next]');
+    function current() {
+      return items.length ? Math.round(gal.scrollLeft / (items[0].offsetWidth + 10)) : 0;
+    }
+    function goTo(i) {
+      if (!gal || !items.length) return;
+      i = Math.max(0, Math.min(items.length - 1, i));
+      gal.scrollTo({ left: items[i].offsetLeft - gal.offsetLeft, behavior: 'smooth' });
+    }
     function mark() {
-      if (!gal || !dots.children.length) return;
-      var idx = Math.round(gal.scrollLeft / (items[0].offsetWidth + 10));
+      if (!gal) return;
+      var idx = current();
       for (var j = 0; j < dots.children.length; j++) dots.children[j].setAttribute('aria-current', j === idx ? 'true' : 'false');
+      if (prev) prev.hidden = idx <= 0;
+      if (next) next.hidden = items.length < 2 || idx >= items.length - 1;
     }
     if (gal) gal.addEventListener('scroll', mark, { passive: true });
     mark();
@@ -120,11 +134,9 @@
     document.addEventListener('click', function (e) {
       if (!root.contains(e.target)) return;
       var dot = e.target.closest('[data-ks-dot]');
-      if (dot) {
-        var it = items[+dot.dataset.ksDot];
-        gal.scrollTo({ left: it.offsetLeft - gal.offsetLeft, behavior: 'smooth' });
-        return;
-      }
+      if (dot) { goTo(+dot.dataset.ksDot); return; }
+      if (e.target.closest('[data-ks-prev]')) { goTo(current() - 1); return; }
+      if (e.target.closest('[data-ks-next]')) { goTo(current() + 1); return; }
       var bundle = e.target.closest('[data-ks-bundle]');
       if (bundle) {
         root.querySelectorAll('[data-ks-bundle]').forEach(function (x) { x.setAttribute('aria-pressed', x === bundle ? 'true' : 'false'); });
