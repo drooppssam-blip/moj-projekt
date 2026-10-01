@@ -29,3 +29,25 @@ P2: 4:30. Znowu. / Trzeci tydzień bez normalnego snu. / Zmęczony kot śpi. Ty 
 P3: Nie dotykaj go! / Każda wizyta kończyła się przeprosinami. / Teraz ma swojego przeciwnika. / KociSparing, kocisparing.pl
 P4: Wpisałam to o 2 w nocy. / W miocie ćwiczyłby polowanie na rodzeństwie. / Dałam mu rodzeństwo do zapasów. / KociSparing, kocisparing.pl
 P5: Moja córka boi się kota. / Poluje na wszystko, co się rusza. / Teraz poluje na coś innego. / KociSparing, kocisparing.pl
+
+# Opisy do szybkich wersji (p1_szybki do p5_szybki)
+
+P1
+Myślałam, że to ze mną coś nie tak 🙃 Ile zadrapań macie po pierwszym miesiącu z kociakiem? 👇 kocisparing.pl
+#kot #kociak #pierwszykot #kotek #zabawkadlakota #catsoftiktok
+
+P2
+Kto jeszcze ma mruczący budzik o 4:30? 😴 Napiszcie, o której wasz kot zaczyna dzień 👇 kocisparing.pl
+#kot #kotwnocy #kociak #pierwszykot #kotek #catsoftiktok
+
+P3
+Każdy gość słyszał u mnie to samo zdanie 😅 Też ostrzegacie znajomych przed swoim kotem? 👇 kocisparing.pl
+#kot #kociak #pierwszykot #kotek #zabawkadlakota #catsoftiktok
+
+P4
+Ręka do góry, kto też to googlował w nocy 🙋‍♀️ Okazało się, że mój kot po prostu potrzebował przeciwnika 🐾 kocisparing.pl
+#kot #kociak #pierwszykot #kocizachowania #kotek #catsoftiktok
+
+P5
+Nogi pod kocem to jego ulubiony cel 🙈 Macie w domu dziecko i kota? Jak się dogadują? 👇 Zabawa zawsze przy dorosłym. kocisparing.pl
+#kot #kociak #kotidziecko #mama #kotek #catsoftiktok
