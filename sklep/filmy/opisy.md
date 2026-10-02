@@ -51,3 +51,10 @@ Ręka do góry, kto też to googlował w nocy 🙋‍♀️ Okazało się, że m
 P5
 Nogi pod kocem to jego ulubiony cel 🙈 Macie w domu dziecko i kota? Jak się dogadują? 👇 Zabawa zawsze przy dorosłym. kocisparing.pl
 #kot #kociak #kotidziecko #mama #kotek #catsoftiktok
+
+# Nowy format W: kot mówi do widza, potem odsłona pacynki
+
+W1 (w1_najwiekszy_wrog.mp4)
+Nie zadzierajcie z nim 😤🥋 kocisparing.pl
+#kot #kotek #koty #śmiesznekoty #catsoftiktok
+Dźwięk: dodać w aplikacji z popularnych. Okładka: pierwsza klatka z pytaniem.
