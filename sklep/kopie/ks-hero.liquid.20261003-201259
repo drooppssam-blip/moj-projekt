@@ -124,8 +124,8 @@
         return r;
       };
       var now = new Date();
-      var a = addWorkdays(now, +eta.dataset.min || 6);
-      var b = addWorkdays(now, +eta.dataset.max || 10);
+      var a = addWorkdays(now, +eta.dataset.min || 7);
+      var b = addWorkdays(now, +eta.dataset.max || 13);
       var dayOnly = { day: 'numeric' };
       var full = { day: 'numeric', month: 'long' };
       var from = a.getMonth() === b.getMonth() ? a.toLocaleDateString('pl-PL', dayOnly) : a.toLocaleDateString('pl-PL', full);
@@ -169,9 +169,9 @@
     { "type": "text", "id": "button", "label": "Przycisk", "default": "Dodaj do koszyka" },
     { "type": "text", "id": "trust", "label": "Zaufanie (oddziel |)", "default": "Darmowa dostawa|14 dni na zwrot|Numer do śledzenia paczki" },
     { "type": "checkbox", "id": "show_eta", "label": "Pokaż przewidywaną datę dostawy", "default": true },
-    { "type": "number", "id": "eta_min", "label": "Dostawa od (dni robocze)", "default": 6 },
-    { "type": "number", "id": "eta_max", "label": "Dostawa do (dni robocze)", "default": 10 },
-    { "type": "text", "id": "eta_fallback", "label": "Tekst zastępczy dostawy", "default": "Dostawa w 6 do 10 dni roboczych od zamówienia." },
+    { "type": "number", "id": "eta_min", "label": "Dostawa od (dni robocze)", "default": 7 },
+    { "type": "number", "id": "eta_max", "label": "Dostawa do (dni robocze)", "default": 13 },
+    { "type": "text", "id": "eta_fallback", "label": "Tekst zastępczy dostawy", "default": "Dostawa w 7 do 13 dni roboczych od zamówienia." },
     { "type": "checkbox", "id": "show_payments", "label": "Pokaż ikony płatności", "default": true }
   ],
   "blocks": [

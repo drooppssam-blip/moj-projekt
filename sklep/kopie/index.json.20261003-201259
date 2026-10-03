@@ -3,6 +3,7 @@
     "ks_hero": {
       "type": "ks-hero",
       "settings": {
+        "product": "sparing-kot",
         "logo": "shopify://shop_images/ks-logo.png",
         "eyebrow": "Dla opiekunów kociąt",
         "heading": "Twój kot nie jest agresywny. Po prostu jesteś jedyną rzeczą w domu, która się rusza.",
@@ -14,10 +15,7 @@
         "two_sub": "Druga 50 zł taniej. Dla dwóch kotów albo na prezent",
         "second_discount": 50,
         "button": "Dodaj do koszyka",
-        "trust": "Darmowa dostawa|14 dni na zwrot|Numer do śledzenia paczki",
-        "eta_min": 6,
-        "eta_max": 10,
-        "eta_fallback": "Dostawa w 6 do 10 dni roboczych od zamówienia."
+        "trust": "Darmowa dostawa|14 dni na zwrot|Numer do śledzenia paczki"
       },
       "blocks": {
         "img_1": {
@@ -320,7 +318,7 @@
           "type": "step",
           "settings": {
             "days": "6 do 10 dni",
-            "text": "Roboczych od zamówienia. Paczka trafia pod twój adres."
+            "text": "Roboczych od wysłania. Paczka trafia pod twój adres."
           }
         },
         "ship_4": {
@@ -373,7 +371,7 @@
           "type": "qa",
           "settings": {
             "q": "Ile trwa dostawa?",
-            "a": "<p>Zamówienie wysyłamy w 1 do 3 dni roboczych, a paczka dociera zwykle w 6 do 10 dni roboczych od złożenia zamówienia. Numer do śledzenia dostajesz mailem.</p>"
+            "a": "<p>Wysyłka w 1 do 3 dni roboczych, dostawa 6 do 10 dni roboczych, łącznie zwykle 7 do 13 dni roboczych. Numer do śledzenia dostajesz mailem.</p>"
           }
         },
         "qa_4": {
@@ -468,6 +466,7 @@
     "ks_sticky": {
       "type": "ks-sticky",
       "settings": {
+        "product": "sparing-kot",
         "note": "Darmowa dostawa",
         "button": "Do koszyka"
       }
