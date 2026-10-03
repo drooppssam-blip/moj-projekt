@@ -58,3 +58,7 @@ W1 (w1_najwiekszy_wrog.mp4)
 Nie zadzierajcie z nim 😤🥋 kocisparing.pl
 #kot #kotek #koty #śmiesznekoty #catsoftiktok
 Dźwięk: dodać w aplikacji z popularnych. Okładka: pierwsza klatka z pytaniem.
+
+# R1 „Ręka pod kocem” (r1_reka_pod_kocem.mp4)
+Oznacz kogoś, kto ma podrapane ręce 👇 Drugi sparingpartner 50 zł taniej. kocisparing.pl
+#kot #kotek #koty #śmiesznekoty #catsoftiktok
