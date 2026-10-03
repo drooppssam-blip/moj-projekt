@@ -62,3 +62,10 @@ Dźwięk: dodać w aplikacji z popularnych. Okładka: pierwsza klatka z pytaniem
 # R1 „Ręka pod kocem” (r1_reka_pod_kocem.mp4)
 Oznacz kogoś, kto ma podrapane ręce 👇 Drugi sparingpartner 50 zł taniej. kocisparing.pl
 #kot #kotek #koty #śmiesznekoty #catsoftiktok
+
+# B1 „Robisz ten błąd” (b1_robisz_ten_blad.mp4)
+Instagram: Też tak robiłeś? 👇 Drugi sparingpartner 50 zł taniej, link w bio 👆
+YouTube: Też tak robiłeś? 👇 Drugi sparingpartner 50 zł taniej. Link na kanale 👆 @KociSparing
+Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
+TikTok: Też tak robiłeś? 👇 kocisparing.pl
+#kot #kotek #koty #kocizachowania #catsoftiktok
