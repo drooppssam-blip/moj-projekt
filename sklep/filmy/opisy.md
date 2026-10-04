@@ -76,3 +76,9 @@ Instagram: Też tak robiłeś? 👇 Obserwuj, jutro kolejny kot vs. ręka 🐾 L
 YouTube: Też tak robiłeś? 👇 Subskrybuj, jutro kolejny kot vs. ręka 🐾 Link na kanale 👆 @KociSparing
 Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 #kot #kotek #koty #kocizachowania #catsoftiktok
+
+# K1 „Odliczanie” (k1_odliczanie_final.mp4), bez lektora, muzyka z aplikacji
+TikTok: 3… 2… 1… i kot ma nowego przeciwnika 😳🥋 kocisparing.pl
+Instagram: 3… 2… 1… i kot ma nowego przeciwnika 😳🥋 Link w bio 👆
+YouTube: 3… 2… 1… i kot ma nowego przeciwnika 😳🥋 Link na kanale 👆 @KociSparing
+#kot #kotek #koty #prezent #unboxing #catsoftiktok
