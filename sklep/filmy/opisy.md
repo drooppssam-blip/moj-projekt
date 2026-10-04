@@ -69,3 +69,10 @@ YouTube: Też tak robiłeś? 👇 Drugi sparingpartner 50 zł taniej. Link na ka
 Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 TikTok: Też tak robiłeś? 👇 kocisparing.pl
 #kot #kotek #koty #kocizachowania #catsoftiktok
+
+# N1 „Nigdy tego nie rób” (n1_nigdy_tego_nie_rob.mp4)
+TikTok: Też tak robiłeś? 👇 Obserwuj, jutro kolejny kot vs. ręka 🐾 kocisparing.pl
+Instagram: Też tak robiłeś? 👇 Obserwuj, jutro kolejny kot vs. ręka 🐾 Link w bio 👆
+YouTube: Też tak robiłeś? 👇 Subskrybuj, jutro kolejny kot vs. ręka 🐾 Link na kanale 👆 @KociSparing
+Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
+#kot #kotek #koty #kocizachowania #catsoftiktok
