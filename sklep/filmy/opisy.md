@@ -84,8 +84,8 @@ YouTube: 3… 2… 1… i kot ma nowego przeciwnika 😳🥋 Link na kanale 👆
 #kot #kotek #koty #prezent #unboxing #catsoftiktok
 
 # S1 „Bez zabawy / po zabawie” (s1_bez_zabawy.mp4)
-TikTok: Twój kot to 1 czy 2? 👇 14 dni na zwrot 🐾 kocisparing.pl
-Instagram: Twój kot to 1 czy 2? 👇 14 dni na zwrot 🐾 Link w bio 👆
-YouTube: Twój kot to 1 czy 2? 👇 14 dni na zwrot 🐾 Link na kanale 👆 @KociSparing
+TikTok: Twój kot wieczorem szaleje czy śpi jak aniołek? 👇 14 dni na zwrot 🐾 kocisparing.pl
+Instagram: Twój kot wieczorem szaleje czy śpi jak aniołek? 👇 14 dni na zwrot 🐾 Link w bio 👆
+YouTube: Twój kot wieczorem szaleje czy śpi jak aniołek? 👇 14 dni na zwrot 🐾 Link na kanale 👆 @KociSparing
 Przypięty komentarz: kocisparing.pl, 14 dni na zwrot 🐾
 #kot #kotek #koty #kocizachowania #catsoftiktok
