@@ -1,0 +1,185 @@
+/* KociSparing landing: jeden plik CSS dla wszystkich sekcji ks- */
+:root {
+  --ks-bg: #fff8f0;
+  --ks-bg-alt: #fdeee0;
+  --ks-ink: #1f1a17;
+  --ks-muted: #5c524b;
+  --ks-accent: #e8622c;
+  --ks-accent-dark: #c44d1c;
+  --ks-ok: #2f7d4f;
+  --ks-line: #ecdccb;
+  --ks-radius: 16px;
+  --ks-max: 1120px;
+}
+
+/* Landing jest samodzielny: chowamy nagłówek i stopkę motywu */
+#header-group,
+.page-wrapper > footer,
+.shopify-section-group-header-group,
+.shopify-section-group-footer-group,
+cart-drawer-component,
+#shopify-chat {
+  display: none !important;
+}
+
+body { background: var(--ks-bg) !important; }
+
+.ks { color: var(--ks-ink); font-size: 17px; line-height: 1.55; }
+.ks * { box-sizing: border-box; }
+.ks-wrap { max-width: var(--ks-max); margin: 0 auto; padding: 0 20px; }
+.ks-sec { padding: 56px 0; display: block !important; }
+.ks-sec--alt { background: var(--ks-bg-alt); }
+.ks h1, .ks h2, .ks h3 { color: var(--ks-ink); margin: 0 0 12px; line-height: 1.2; letter-spacing: -0.01em; }
+.ks h1 { font-size: clamp(28px, 5vw, 44px); }
+.ks h2 { font-size: clamp(24px, 4vw, 34px); }
+.ks h3 { font-size: 20px; }
+.ks p { margin: 0 0 12px; }
+.ks-lead { font-size: 19px; color: var(--ks-muted); }
+.ks-center { text-align: center; }
+.ks-eyebrow { display: inline-block; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--ks-accent-dark); margin-bottom: 8px; }
+.ks img { max-width: 100%; height: auto; display: block; border-radius: var(--ks-radius); }
+.ks blockquote { margin: 0 !important; padding: 0 !important; border: 0 !important; quotes: none; font-style: normal; }
+.ks blockquote::before, .ks blockquote::after { content: none !important; }
+
+/* Przycisk */
+.ks-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; min-height: 56px; padding: 14px 24px; border: 0; border-radius: 999px;
+  background: var(--ks-accent); color: #fff !important; font-size: 18px; font-weight: 700;
+  cursor: pointer; text-decoration: none; transition: background .15s;
+}
+.ks-btn:hover { background: var(--ks-accent-dark); }
+.ks-btn[disabled] { opacity: .6; cursor: wait; }
+
+/* HERO */
+.ks-hero { padding: 24px 0 40px; }
+.ks-hero__grid { display: grid; gap: 28px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .ks-hero__grid { grid-template-columns: 1.05fr 1fr; gap: 48px; } }
+.ks-brand { display: flex; align-items: center; gap: 10px; padding: 14px 0; }
+.ks-brand img { height: 36px; width: auto; border-radius: 0; }
+.ks-gallery { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 0 8px; scrollbar-width: none; }
+.ks-gallery::-webkit-scrollbar { display: none; }
+.ks-gallery__item { flex: 0 0 88%; scroll-snap-align: center; }
+@media (min-width: 900px) { .ks-gallery__item { flex-basis: 100%; } }
+.ks-dots { display: flex; justify-content: center; gap: 6px; margin-top: 8px; }
+.ks-dots button { width: 8px; height: 8px; border-radius: 50%; border: 0; padding: 0; background: var(--ks-line); cursor: pointer; }
+.ks-dots button[aria-current="true"] { background: var(--ks-accent); }
+.ks-price { display: flex; align-items: baseline; gap: 12px; margin: 8px 0 16px; }
+.ks-price__now { font-size: 32px; font-weight: 800; }
+.ks-price__note { font-size: 15px; color: var(--ks-ok); font-weight: 600; }
+.ks-points { list-style: none; padding: 0; margin: 0 0 20px; }
+.ks-points li { position: relative; padding-left: 30px; margin-bottom: 8px; }
+.ks-points li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--ks-ok); font-weight: 800; }
+.ks-bundles { display: grid; gap: 10px; margin-bottom: 16px; }
+.ks-bundle { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 2px solid var(--ks-line); border-radius: 14px; background: #fff; cursor: pointer; font: inherit; color: inherit; text-align: left; width: 100%; }
+.ks-bundle[aria-pressed="true"] { border-color: var(--ks-accent); box-shadow: 0 0 0 3px rgba(232,98,44,.15); }
+.ks-bundle__title { font-weight: 700; display: block; }
+.ks-bundle__sub { font-size: 14px; color: var(--ks-muted); display: block; }
+.ks-bundle__price { font-weight: 800; white-space: nowrap; }
+.ks-trust { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; color: var(--ks-muted); margin-top: 14px; }
+
+/* PASEK DOSTAWY */
+.ks-bar { background: var(--ks-ink); color: #fff; padding: 16px 0; display: block !important; }
+.ks-bar__list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 16px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+@media (min-width: 900px) { .ks-bar__list { grid-template-columns: repeat(4, 1fr); text-align: center; } }
+.ks-bar__list strong { color: #ffc9a8; }
+
+/* PROBLEM, PRZED I PO, GWARANCJA: układ 2 kolumn */
+.ks-split { display: grid; gap: 28px; align-items: center; }
+@media (min-width: 900px) { .ks-split { grid-template-columns: 1fr 1fr; gap: 56px; } .ks-split--rev > :first-child { order: 2; } }
+.ks-quote { font-size: clamp(22px, 3.4vw, 30px); font-weight: 800; line-height: 1.25; margin-bottom: 16px; }
+
+/* KROKI */
+.ks-steps { display: grid; gap: 20px; grid-template-columns: 1fr; margin-top: 28px; }
+@media (min-width: 900px) { .ks-steps { grid-template-columns: repeat(3, 1fr); } }
+.ks-step { background: #fff; border-radius: var(--ks-radius); padding: 14px; }
+.ks-step__num { display: inline-flex; width: 34px; height: 34px; border-radius: 50%; background: var(--ks-accent); color: #fff; font-weight: 800; align-items: center; justify-content: center; margin: 14px 0 8px; }
+
+/* PRZED I PO */
+.ks-ba { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+.ks-ba figure { margin: 0; position: relative; }
+.ks-ba figcaption { position: absolute; top: 10px; left: 10px; background: #fff; color: var(--ks-ink); font-weight: 800; font-size: 14px; padding: 6px 12px; border-radius: 999px; }
+.ks-ba figure:last-child figcaption { background: var(--ks-ok); color: #fff; }
+.ks-ba__caps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; font-size: 15px; color: var(--ks-muted); }
+
+/* DLA KOGO */
+.ks-cards { display: grid; gap: 16px; margin-top: 24px; }
+@media (min-width: 900px) { .ks-cards { grid-template-columns: repeat(3, 1fr); } }
+.ks-card { background: #fff; border-radius: var(--ks-radius); padding: 22px; border: 1px solid var(--ks-line); display: block !important; }
+.ks-card__who { font-size: 14px; font-weight: 700; color: var(--ks-accent-dark); margin-bottom: 8px; }
+.ks-card__text { font-size: 18px; font-weight: 600; margin: 0; }
+
+/* ZESTAW */
+.ks-kit { position: relative; margin-top: 24px; }
+.ks-kit__list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 16px; list-style: none; padding: 0; }
+@media (min-width: 900px) { .ks-kit__list { grid-template-columns: repeat(4, 1fr); } }
+.ks-kit__list li { background: #fff; border-radius: 14px; padding: 14px; text-align: center; border: 1px solid var(--ks-line); }
+.ks-kit__num { display: block; font-size: 26px; font-weight: 800; color: var(--ks-accent-dark); }
+.ks-kit__label { font-size: 14px; color: var(--ks-muted); }
+
+/* PORÓWNANIE */
+.ks-table { width: 100%; border-collapse: collapse; margin-top: 24px; background: #fff; border-radius: var(--ks-radius); overflow: hidden; font-size: 15px; }
+.ks-table th, .ks-table td { padding: 12px 10px; border-bottom: 1px solid var(--ks-line); text-align: center; vertical-align: middle; }
+.ks-table th:first-child, .ks-table td:first-child { text-align: left; font-weight: 600; }
+.ks-table thead th { background: var(--ks-ink); color: #fff; font-size: 14px; }
+.ks-table thead th.ks-us { background: var(--ks-accent); }
+.ks-table td.ks-us { background: #fff3ea; font-weight: 700; }
+.ks-yes { color: var(--ks-ok); font-weight: 800; }
+.ks-no { color: #b3261e; font-weight: 800; }
+.ks-table-scroll { overflow-x: auto; }
+
+/* OPINIE */
+.ks-reviews { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 20px 10px; margin: 24px -20px 0; scrollbar-width: none; }
+.ks-reviews::-webkit-scrollbar { display: none; }
+.ks-review { flex: 0 0 82%; scroll-snap-align: center; background: #fff; border-radius: var(--ks-radius); padding: 14px; border: 1px solid var(--ks-line); }
+@media (min-width: 900px) { .ks-review { flex-basis: calc(33.33% - 10px); } }
+.ks-review__stars { color: #f2a900; letter-spacing: 2px; margin: 10px 0 6px; }
+.ks-review__name { font-size: 14px; color: var(--ks-muted); margin-top: 8px; }
+.ks-empty { padding: 28px; border: 2px dashed var(--ks-line); border-radius: var(--ks-radius); text-align: center; color: var(--ks-muted); margin-top: 24px; display: block !important; }
+
+/* DOSTAWA */
+.ks-timeline { display: grid; gap: 14px; margin-top: 24px; counter-reset: ks; list-style: none; padding: 0; }
+@media (min-width: 900px) { .ks-timeline { grid-template-columns: repeat(4, 1fr); } }
+.ks-timeline li { background: #fff; border-radius: 14px; padding: 18px; border: 1px solid var(--ks-line); }
+.ks-timeline__days { display: block; font-size: 22px; font-weight: 800; color: var(--ks-accent-dark); margin-bottom: 4px; }
+
+/* GWARANCJA */
+.ks-badge { width: 140px; height: 140px; border-radius: 50%; background: var(--ks-ok); color: #fff; display: flex !important; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-weight: 800; margin: 0 auto; }
+.ks-badge__big { font-size: 48px; line-height: 1; }
+
+/* FAQ */
+.ks-faq { margin-top: 24px; border-top: 1px solid var(--ks-line); }
+.ks-faq details { border-bottom: 1px solid var(--ks-line); }
+.ks-faq summary { cursor: pointer; list-style: none; padding: 18px 36px 18px 0; font-weight: 700; position: relative; }
+.ks-faq summary::-webkit-details-marker { display: none; }
+.ks-faq summary::after { content: "+"; position: absolute; right: 4px; top: 14px; font-size: 24px; color: var(--ks-accent); }
+.ks-faq details[open] summary::after { content: "−"; }
+.ks-faq__a { padding: 0 0 18px; color: var(--ks-muted); }
+
+/* STOPKA */
+.ks-foot { background: var(--ks-ink); color: #d9cfc6; padding: 40px 0 110px; font-size: 14px; display: block !important; }
+.ks-foot a { color: #fff; }
+.ks-foot__links { display: flex; flex-wrap: wrap; gap: 10px 20px; list-style: none; padding: 0; margin: 0 0 16px; }
+
+/* STICKY NA TELEFONIE */
+.ks-sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: #fff; border-top: 1px solid var(--ks-line); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: flex !important; align-items: center; gap: 12px; transform: translateY(110%); transition: transform .2s; box-shadow: 0 -6px 20px rgba(0,0,0,.08); }
+.ks-sticky.is-visible { transform: translateY(0); }
+.ks-sticky__price { font-weight: 800; font-size: 20px; white-space: nowrap; }
+.ks-sticky__price small { display: block; font-size: 12px; font-weight: 600; color: var(--ks-ok); }
+.ks-sticky .ks-btn { min-height: 48px; font-size: 16px; }
+@media (min-width: 900px) { .ks-sticky { display: none !important; } .ks-foot { padding-bottom: 40px; } }
+
+/* Przewidywana data dostawy i ikony płatności pod przyciskiem */
+.ks .ks-eta{margin:12px 0 0;font-size:14px;line-height:1.45;color:#5b514a;text-align:center}
+.ks .ks-pay{display:flex !important;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:10px}
+.ks .ks-pay__icon{width:38px;height:24px;display:block}
+
+/* Strzałki galerii w hero: zawsze widoczne, ciemne, dobrze kontrastują ze zdjęciem */
+.ks-gallery-wrap { position: relative; }
+.ks-arrow { position: absolute; top: 45%; transform: translateY(-50%); z-index: 3; width: 52px; height: 52px; border-radius: 50%; border: 2px solid rgba(255,255,255,.85); padding: 0 0 5px; background: rgba(31,26,23,.72); color: #fff !important; font-size: 38px; font-weight: 700; line-height: 1; display: flex !important; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,.3); cursor: pointer; transition: background .15s, transform .15s; }
+.ks-arrow:hover { background: var(--ks-accent); transform: translateY(-50%) scale(1.08); }
+.ks-arrow--prev { left: 12px; }
+.ks-arrow--next { right: 12px; }
+.ks-arrow[hidden] { display: none !important; }
+@media (min-width: 900px) { .ks-arrow { width: 58px; height: 58px; font-size: 42px; } .ks-gallery { cursor: grab; } }
+.ks-dots button { width: 10px; height: 10px; }

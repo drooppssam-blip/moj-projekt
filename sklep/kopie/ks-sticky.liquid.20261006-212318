@@ -8,7 +8,7 @@
 -%}
 {%- if p != blank -%}
 <div class="ks ks-sticky" id="ks-{{ section.id }}" aria-hidden="true">
-  <div class="ks-sticky__price">{{ v.price | money }}{% if v.compare_at_price > v.price %} <s class="ks-was">{{ v.compare_at_price | money }}</s>{% endif %}<small>{{ section.settings.note }}</small></div>
+  <div class="ks-sticky__price">{{ v.price | money }}<small>{{ section.settings.note }}</small></div>
   <form method="post" action="{{ routes.cart_add_url }}" style="flex:1">
     <input type="hidden" name="id" value="{{ v.id }}">
     <input type="hidden" name="quantity" value="1">

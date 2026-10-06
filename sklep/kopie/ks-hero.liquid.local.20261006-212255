@@ -1,5 +1,4 @@
 {{ 'ks-landing.css' | asset_url | stylesheet_tag }}
-<style>.ks-was{font-weight:400;color:#8a7f77;margin-left:4px}.ks-omnibus{margin:6px 0 10px;font-size:12px;color:#8a7f77}</style>
 {%- liquid
   assign p = section.settings.product
   if p == blank
@@ -53,16 +52,13 @@
             <div class="ks-bundles" role="group" aria-label="Wybierz zestaw">
               <button type="button" class="ks-bundle" aria-pressed="true" data-ks-bundle="1">
                 <span><span class="ks-bundle__title">{{ section.settings.one_label }}</span><span class="ks-bundle__sub">{{ section.settings.one_sub }}</span></span>
-                <span class="ks-bundle__price">{{ v.price | money }}{% if v.compare_at_price > v.price %} <s class="ks-was">{{ v.compare_at_price | money }}</s>{% endif %}</span>
+                <span class="ks-bundle__price">{{ v.price | money }}</span>
               </button>
               <button type="button" class="ks-bundle" aria-pressed="false" data-ks-bundle="2">
                 <span><span class="ks-bundle__title">{{ section.settings.two_label }}</span><span class="ks-bundle__sub">{{ section.settings.two_sub }}</span></span>
                 <span class="ks-bundle__price">{{ two_total | money }} <s style="font-weight:400;color:#8a7f77">{{ two_regular | money }}</s></span>
               </button>
             </div>
-            {%- if v.compare_at_price > v.price -%}
-              <p class="ks-omnibus">Najniższa cena z 30 dni przed obniżką: {{ v.compare_at_price | money }}</p>
-            {%- endif -%}
             <button type="submit" class="ks-btn" {% unless v.available %}disabled{% endunless %}>{{ section.settings.button }}</button>
           </form>
           {%- if section.settings.show_eta -%}
