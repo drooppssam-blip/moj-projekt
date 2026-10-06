@@ -82,3 +82,10 @@ TikTok: 3… 2… 1… i kot ma nowego przeciwnika 😳🥋 kocisparing.pl
 Instagram: 3… 2… 1… i kot ma nowego przeciwnika 😳🥋 Link w bio 👆
 YouTube: 3… 2… 1… i kot ma nowego przeciwnika 😳🥋 Link na kanale 👆 @KociSparing
 #kot #kotek #koty #prezent #unboxing #catsoftiktok
+
+# S1 „Bez zabawy / po zabawie” (s1_bez_zabawy.mp4)
+TikTok: Twój kot to 1 czy 2? 👇 14 dni na zwrot 🐾 kocisparing.pl
+Instagram: Twój kot to 1 czy 2? 👇 14 dni na zwrot 🐾 Link w bio 👆
+YouTube: Twój kot to 1 czy 2? 👇 14 dni na zwrot 🐾 Link na kanale 👆 @KociSparing
+Przypięty komentarz: kocisparing.pl, 14 dni na zwrot 🐾
+#kot #kotek #koty #kocizachowania #catsoftiktok

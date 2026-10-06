@@ -16,6 +16,7 @@ for w in words:
     if d.textlength(t, font=f) <= 960: cur = t
     else: lines.append(cur); cur = w
 if cur: lines.append(cur)
+lines = [l for l in lines if l.strip()]  # bez pustych linii (inaczej rysuje się mały pusty pasek)
 y = int(os.environ.get('NAPIS_Y', '1150')) - (len(lines) * step) // 2
 for l in lines:
     x = (W - d.textlength(l, font=f)) / 2
