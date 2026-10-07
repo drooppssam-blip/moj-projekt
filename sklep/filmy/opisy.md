@@ -96,3 +96,8 @@ Instagram: Masz podrapane ręce? 👇 Teraz 139 zł zamiast 169 zł, darmowa dos
 YouTube: Masz podrapane ręce? 👇 Teraz 139 zł zamiast 169 zł, darmowa dostawa 🐾 Link na kanale 👆 @KociSparing
 Przypięty komentarz: kocisparing.pl, 139 zł z darmową dostawą 🐾
 #kot #kotek #koty #kocizachowania #catsoftiktok
+
+# C2 „Masz podrapane ręce?”, wersja bez ceny, tylko „30 zł taniej” (c2_podrapane_rece_rabat.mp4), na Instagram
+Instagram: Masz podrapane ręce? 👇 Teraz 30 zł taniej i z darmową dostawą. Cena w linku w bio 👆
+Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
+#kot #kotek #koty #kocizachowania #zabawkadlakota
