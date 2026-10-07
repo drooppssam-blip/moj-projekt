@@ -89,3 +89,10 @@ Instagram: Twój kot wieczorem szaleje czy śpi jak aniołek? 👇 14 dni na zwr
 YouTube: Twój kot wieczorem szaleje czy śpi jak aniołek? 👇 14 dni na zwrot 🐾 Link na kanale 👆 @KociSparing
 Przypięty komentarz: kocisparing.pl, 14 dni na zwrot 🐾
 #kot #kotek #koty #kocizachowania #catsoftiktok
+
+# C1 „Masz podrapane ręce?” (c1_podrapane_rece.mp4), z ceną 169 → 139 zł
+TikTok: Masz podrapane ręce? 👇 Teraz 139 zł zamiast 169 zł, darmowa dostawa 🐾 kocisparing.pl
+Instagram: Masz podrapane ręce? 👇 Teraz 139 zł zamiast 169 zł, darmowa dostawa 🐾 Link w bio 👆
+YouTube: Masz podrapane ręce? 👇 Teraz 139 zł zamiast 169 zł, darmowa dostawa 🐾 Link na kanale 👆 @KociSparing
+Przypięty komentarz: kocisparing.pl, 139 zł z darmową dostawą 🐾
+#kot #kotek #koty #kocizachowania #catsoftiktok
