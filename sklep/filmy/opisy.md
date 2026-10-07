@@ -101,3 +101,10 @@ Przypięty komentarz: kocisparing.pl, 139 zł z darmową dostawą 🐾
 Instagram: Masz podrapane ręce? 👇 Teraz 30 zł taniej i z darmową dostawą. Cena w linku w bio 👆
 Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 #kot #kotek #koty #kocizachowania #zabawkadlakota
+
+# D1 „Ile kosztuje znudzony kot?” (d1_znudzony_kot.mp4)
+- **TikTok:** Ile już cię kosztował? 😼 Sparingpartner 139 zł, darmowa dostawa. kocisparing.pl #kot #kociak #kotydomowe #zabawkadlakota #śmiesznekoty
+- **Instagram:** Ile już cię kosztował? 😼 Sparingpartner 139 zł, darmowa dostawa. Link w bio 👆 #kot #kociak #kotydomowe #zabawkadlakota
+- **YouTube Shorts:** Ile kosztuje znudzony kot? 😼 Sparingpartner 139 zł, darmowa dostawa. Link na kanale. #shorts #kot #kociak
+- **Facebook:** Ile już cię kosztował? 😼 Link w pierwszym komentarzu. Komentarz: Sparingpartner 139 zł z darmową dostawą: https://kocisparing.pl
+- Wszędzie oznaczenie: Treści generowane przez AI.
