@@ -116,3 +116,8 @@ Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 - **YouTube Shorts:** tytuł „Test: czy Twój kot tego potrzebuje? 😼 #shorts”, opis: Ile razy TAK? Napisz w komentarzu 👇 Sparingpartner 139 zł, darmowa dostawa. Link na kanale. #kot #kociak
 - **Facebook:** Ile razy TAK? Napisz w komentarzu 👇 😼 Link w pierwszym komentarzu. Komentarz: Sparingpartner 139 zł z darmową dostawą: https://kocisparing.pl
 - Wszędzie oznaczenie: Treści generowane przez AI.
+
+# Z1 „Zasnął w trakcie walki” (z1_zasnal.mp4), słodki, bez reklamy
+- **TikTok / Instagram / Facebook:** Słodziak czy wojownik? 😼💤 #kot #kociak #słodkikot #kotek #śpiącykot
+- **YouTube Shorts:** tytuł „Zasnął w trakcie walki 😼💤 #shorts”, opis: Słodziak czy wojownik? #kot #kociak #słodkikot
+- Bez linku i ceny w opisie. Wszędzie oznaczenie: Treści generowane przez AI.
