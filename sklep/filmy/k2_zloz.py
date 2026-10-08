@@ -8,7 +8,7 @@ T = tempfile.mkdtemp()
 def run(cmd): subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
 V = 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30'
 run([FF, '-y', '-i', 'k2_skok.mp4', '-i', 'k2_patrzy.mp4', '-filter_complex',
-     f'[0:v]{V}[a];[1:v]{V}[b];[a][b]concat=n=2:v=1:a=0,noise=alls=6:allf=t,format=yuv420p[v]',   # lekkie ziarno jak w kamerze
+     f'[0:v]{V}[a];[1:v]{V}[b];[a][b]concat=n=2:v=1:a=0,noise=alls=4:allf=t,format=yuv420p[v]',   # lekkie ziarno jak w kamerze
      '-map', '[v]', '-c:v', 'libx264', '-crf', '19', f'{T}/base.mp4'])
 end = 12.0
 N = 13
@@ -18,7 +18,7 @@ inp = ['-i', f'{T}/base.mp4']; fc = []; prev = '0:v'
 for i in range(N):
     inp += ['-i', f'{T}/hud/h{i:02d}.png']; fc.append(f"[{prev}][{i+1}:v]overlay=0:0:enable='gte(t,{i})*lt(t,{i+1})'[o{i}]"); prev = f'o{i}'
 inp += ['-i', f'{T}/c.png']; fc.append(f"[{prev}][{N+1}:v]overlay=0:0:enable='between(t,0,3.2)',format=yuv420p[v]")
-run([FF, '-y'] + inp + ['-filter_complex', ';'.join(fc), '-map', '[v]', '-t', f'{end}', '-c:v', 'libx264', '-crf', '20', f'{T}/v.mp4'])
+run([FF, '-y'] + inp + ['-filter_complex', ';'.join(fc), '-map', '[v]', '-t', f'{end}', '-c:v', 'libx264', '-crf', '23', '-maxrate', '8M', '-bufsize', '16M', f'{T}/v.mp4'])
 # dźwięk: cichy szum pokoju z mikrofonu kamery i miękkie stuknięcia łapek przy skoku i tarzaniu
 SR = 48000; t = np.arange(int(end * SR)) / SR; rng = np.random.default_rng(7)
 y = np.cumsum(rng.standard_normal(len(t))); y -= np.convolve(y, np.ones(4800) / 4800, 'same'); y = y / np.max(np.abs(y)) * 0.05
