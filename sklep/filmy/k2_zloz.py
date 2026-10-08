@@ -19,7 +19,7 @@ for i in range(N):
     inp += ['-i', f'{T}/hud/h{i:02d}.png']; fc.append(f"[{prev}][{i+1}:v]overlay=0:0:enable='gte(t,{i})*lt(t,{i+1})'[o{i}]"); prev = f'o{i}'
 inp += ['-i', f'{T}/c.png']; fc.append(f"[{prev}][{N+1}:v]overlay=0:0:enable='between(t,0,3.2)',format=yuv420p[v]")
 run([FF, '-y'] + inp + ['-filter_complex', ';'.join(fc), '-map', '[v]', '-t', f'{end}', '-c:v', 'libx264', '-crf', '23', '-maxrate', '8M', '-bufsize', '16M', f'{T}/v.mp4'])
-# dźwięk: cichy szum pokoju z mikrofonu kamery i miękkie stuknięcia łapek przy skoku i tarzaniu
+# dźwięk: własna zabawna muzyczka + cichy szum pokoju z mikrofonu kamery i miękkie stuknięcia łapek przy skoku i tarzaniu
 SR = 48000; t = np.arange(int(end * SR)) / SR; rng = np.random.default_rng(7)
 y = np.cumsum(rng.standard_normal(len(t))); y -= np.convolve(y, np.ones(4800) / 4800, 'same'); y = y / np.max(np.abs(y)) * 0.05
 for s in (2.05, 2.35, 3.6, 4.1, 4.6, 5.2, 6.6):
@@ -28,5 +28,7 @@ for s in (2.05, 2.35, 3.6, 4.1, 4.6, 5.2, 6.6):
 y = np.clip(y, -1, 1)
 with wave.open(f'{T}/a.wav', 'wb') as w:
     w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((y * 32767).astype('<i2').tobytes())
-run([FF, '-y', '-i', f'{T}/v.mp4', '-i', f'{T}/a.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '128k', '-ac', '2', '-t', f'{end}', '-movflags', '+faststart', 'k2_kamera_w_nocy.mp4'])
+subprocess.run(['python3', 'muzyka_skradanie.py', f'{end}', '7.5', f'{T}/mus.wav'], check=True, stdout=subprocess.DEVNULL)   # 7,5 s: kociak patrzy w kamerę
+run([FF, '-y', '-i', f'{T}/a.wav', '-i', f'{T}/mus.wav', '-filter_complex', '[0:a]volume=0.8[r];[1:a]volume=0.9[m];[r][m]amix=inputs=2:normalize=0,alimiter=limit=0.95[o]', '-map', '[o]', f'{T}/mix.wav'])
+run([FF, '-y', '-i', f'{T}/v.mp4', '-i', f'{T}/mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '128k', '-ac', '2', '-t', f'{end}', '-movflags', '+faststart', 'k2_kamera_w_nocy.mp4'])
 print('ok', end)
