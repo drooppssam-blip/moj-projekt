@@ -121,3 +121,9 @@ Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 - **TikTok / Instagram / Facebook:** Słodziak czy wojownik? 😼💤 #kot #kociak #słodkikot #kotek #śpiącykot
 - **YouTube Shorts:** tytuł „Zasnął w trakcie walki 😼💤 #shorts”, opis: Słodziak czy wojownik? #kot #kociak #słodkikot
 - Bez linku i ceny w opisie. Wszędzie oznaczenie: Treści generowane przez AI.
+
+# K2 „Kamera w salonie, 3:12 w nocy” (k2_kamera_w_nocy.mp4), format viralowy, bez reklamy
+- **TikTok / Instagram / Facebook:** Ktoś tu ma nocne treningi 😼🥋 Wasz kot też szaleje w nocy? 👇 #kot #kociak #kamera #śmiesznekoty #kotek
+- **YouTube Shorts:** tytuł „Kamera w salonie, 3:12 w nocy 😼🥋 #shorts”, opis: Wasz kot też szaleje w nocy? 👇 #kot #kociak
+- **Instagram relacja:** ten sam film + naklejka „Link” do https://kocisparing.pl
+- Wszędzie oznaczenie: Treści generowane przez AI. Nie piszemy, że to prawdziwe nagranie.
