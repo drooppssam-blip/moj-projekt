@@ -108,3 +108,11 @@ Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 - **YouTube Shorts:** Ile kosztuje znudzony kot? 😼 Sparingpartner 139 zł, darmowa dostawa. Link na kanale. #shorts #kot #kociak
 - **Facebook:** Ile już cię kosztował? 😼 Link w pierwszym komentarzu. Komentarz: Sparingpartner 139 zł z darmową dostawą: https://kocisparing.pl
 - Wszędzie oznaczenie: Treści generowane przez AI.
+
+# T1 „Test: czy Twój kot tego potrzebuje?” (t1_test.mp4)
+- **TikTok:** Ile razy TAK? Napisz w komentarzu 👇 😼 Sparingpartner 139 zł, darmowa dostawa. kocisparing.pl #kot #kociak #kotydomowe #zabawkadlakota #śmiesznekoty
+- **Instagram:** Ile razy TAK? Napisz w komentarzu 👇 😼 Sparingpartner 139 zł, darmowa dostawa. Link w bio 👆 #kot #kociak #kotydomowe #zabawkadlakota
+- **Instagram relacja:** ten sam film + naklejka „Link” do https://kocisparing.pl, tekst na naklejce: „Sprawdź cenę”
+- **YouTube Shorts:** tytuł „Test: czy Twój kot tego potrzebuje? 😼 #shorts”, opis: Ile razy TAK? Napisz w komentarzu 👇 Sparingpartner 139 zł, darmowa dostawa. Link na kanale. #kot #kociak
+- **Facebook:** Ile razy TAK? Napisz w komentarzu 👇 😼 Link w pierwszym komentarzu. Komentarz: Sparingpartner 139 zł z darmową dostawą: https://kocisparing.pl
+- Wszędzie oznaczenie: Treści generowane przez AI.
