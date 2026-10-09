@@ -127,3 +127,10 @@ Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 - **YouTube Shorts:** tytuł „Kamera w salonie, 3:12 w nocy 😼🥋 #shorts”, opis: Wasz kot też szaleje w nocy? 👇 #kot #kociak
 - **Instagram relacja:** ten sam film + naklejka „Link” do https://kocisparing.pl
 - Wszędzie oznaczenie: Treści generowane przez AI. Nie piszemy, że to prawdziwe nagranie.
+
+# G1 „Gdzie znaleźć tego zawodnika?” (g1_gdzie_znalezc.mp4), odpowiedź na komentarz
+- **TikTok:** publikuj przez „Odpowiedz filmem” na komentarz „gdzie znajdę tego pluszaka??” pod K2, naklejkę z pytaniem ustaw na górze. Opis: Odpowiadam 🥋😼 kocisparing.pl #kot #kociak #zabawkadlakota
+- **Instagram:** Pytaliście, gdzie go znaleźć 👇 Sparingpartner 139 zł, darmowa dostawa. Link w bio 👆 #kot #kociak #zabawkadlakota
+- **YouTube Shorts:** tytuł „Gdzie znaleźć tego zawodnika? 🥋😼 #shorts”, opis: Sparingpartner 139 zł, darmowa dostawa. Link na kanale.
+- **Facebook:** Pytaliście, gdzie go znaleźć 👇 Link w pierwszym komentarzu. Komentarz: https://kocisparing.pl
+- Wszędzie oznaczenie: Treści generowane przez AI.
