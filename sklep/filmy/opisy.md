@@ -134,3 +134,8 @@ Facebook: jak Instagram, a w pierwszym komentarzu https://kocisparing.pl
 - **YouTube Shorts:** tytuł „Gdzie znaleźć tego zawodnika? 🥋😼 #shorts”, opis: Sparingpartner 139 zł, darmowa dostawa. Link na kanale.
 - **Facebook:** Pytaliście, gdzie go znaleźć 👇 Link w pierwszym komentarzu. Komentarz: https://kocisparing.pl
 - Wszędzie oznaczenie: Treści generowane przez AI.
+
+# P6 „POV: kupiłeś prezent dla kociarza” (p6_prezent_pov.mp4), bez lektora i bez reklamy
+- **TikTok / Instagram / Facebook:** Oznacz kociarza, który zasługuje na taki prezent 🎁😼 #kot #prezent #kociak #mikołajki #pomysłnaprezent
+- **YouTube Shorts:** tytuł „POV: kupiłeś prezent dla kociarza 🎁 #shorts”, opis: Oznacz kociarza 👇 #kot #prezent
+- Wszędzie oznaczenie: Treści generowane przez AI.
